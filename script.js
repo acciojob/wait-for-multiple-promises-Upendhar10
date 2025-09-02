@@ -2,8 +2,9 @@
 
 function Main(){
 	// output targets tbody
-	let output = document.getElementById('output');
-	output.innerText = "Loading..."
+	// let output = document.getElementById('output');
+	// output.innerText = "Loading..."
+	// output.innerHTML = "<tr rowspan="2"><td id="loading">Loading... </td><tr>"
 
 	let start = Date.now();
 	
@@ -30,7 +31,7 @@ function randomPromise(name){
 
 function ResolveAllPromises(values, TotalTime){
 	let output = document.getElementById("output");
-	output.innerText = "";
+	output.innerHTML = "";
 	
 	values.forEach((val) => {
 		let row = document.createElement('tr');
